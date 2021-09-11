@@ -3,8 +3,14 @@
 
 #include "pch.h"
 #include <iostream>
-
+#include "MyList.h"
 int main()
 {
-    std::cout << "Hello World!\n"; 
+	MyList<int> ml;
+
+	ml.push_back(3);
+	ml.push_back(2);
+	ml.push_back(1);
+
+	std::cout << ml << "\n";
 }
