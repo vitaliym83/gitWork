@@ -2,6 +2,9 @@
 #include <list>
 #include <ostream>
 #include <istream>
+#include <algorithm>
+#include <functional>
+#include <numeric>
 
 template <typename T>
 class MyList
@@ -39,6 +42,11 @@ public:
 
 		return in;
 	}
+
+	T sum(int start_index = 0){
+		return std::accumulate(this->list.begin(), this->list.end(), start_index);
+	}
+
 
 	~MyList(){}
 };
