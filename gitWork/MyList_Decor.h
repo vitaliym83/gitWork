@@ -24,14 +24,19 @@ public:
 
 		return in;
 	}
-	int count_of_val( T val) {
+	int count_of_val( T val, int start_index=1, int end_index=4) {
 		int count=0;
-		for (auto i : this->getList()) {
+		for (int i = start_index; i < end_index;i++) {
 			if (i == val)
 				count++;
 			
 		}return count;
 	}
+
+	T mult() {
+		return std::accumulate(this->list.begin(), this->list.end(),2,std::multiplies<int>());
+	}
+
 
 	
 	~MyList_Decor(){}

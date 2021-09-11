@@ -28,7 +28,7 @@ int main()
 	std::cin >> ml;
 
 	std::cout << ml << "\n";
-	std::cout << ml.sum() << "\n";
+	std::cout << ml.mult() << "\n";
 	std::cout << ml.sum(1) << "\n";
 	std::cout << ml.isHasOdd() << "\n";
 }
