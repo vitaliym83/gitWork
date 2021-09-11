@@ -17,4 +17,5 @@ int main()
 	std::cout << ml << "\n";
 	std::cout << ml.sum() << "\n";
 	std::cout << ml.sum(1) << "\n";
+	std::cout << ml.isHasOdd() << "\n";
 }

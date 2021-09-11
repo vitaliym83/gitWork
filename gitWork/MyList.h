@@ -47,6 +47,14 @@ public:
 		return std::accumulate(this->list.begin(), this->list.end(), start_index);
 	}
 
+	bool isHasOdd() {
+		bool isOdd = false;
+		for (auto i : this->getList()) {
+			if (i % 2 == 0)
+				isOdd = true;
+		}
+		return isOdd;
+	}
 
 	~MyList(){}
 };
