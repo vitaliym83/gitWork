@@ -1,6 +1,7 @@
 #pragma once
 #include <list>
 #include <ostream>
+#include <istream>
 
 template <typename T>
 class MyList
@@ -27,6 +28,16 @@ public:
 			out << i << ".";
 
 		return out;
+	}
+
+	friend std::istream& operator >> (std::istream& in, MyList<T>& my_list) {
+
+		T * val = new T;
+		in >> *val;
+		my_list.push_back(*val);
+		delete val;
+
+		return in;
 	}
 
 	~MyList(){}

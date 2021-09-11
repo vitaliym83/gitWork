@@ -12,5 +12,7 @@ int main()
 	ml.push_back(2);
 	ml.push_back(1);
 
+	std::cin >> ml;
+
 	std::cout << ml << "\n";
 }
